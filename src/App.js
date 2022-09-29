@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
 
+import "./App.css";
+import Carousel from "./components/carousel/Carousel";
+import Slide from "./components/slide/Slide";
 function App() {
+  const data = [
+    "Slide 1",
+    "Slide 2",
+    "Slide 3",
+    "Slide 4",
+    "Slide 5",
+    "Slide 6",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Carousel data={data} />
     </div>
   );
 }
